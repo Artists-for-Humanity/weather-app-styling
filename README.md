@@ -1,8 +1,10 @@
-# React + Vite
+# Weather App Styling Exercise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create your own branch and pull it to your development environment.
 
-Currently, two official plugins are available:
+Go to https://openweathermap.org/ and sign up for an account and API key.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create an ENV variable and update the API key in useCountries.js to fetch weather data.
+
+Try to style the app anyways you like using CSS and other vector graphic assets.
+
