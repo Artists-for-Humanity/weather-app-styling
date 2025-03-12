@@ -1,5 +1,4 @@
-# Create a README.md file with the formatted content
-readme_content = """# 🌤️ Weather App Styling Exercise (Mobile Only)
+# 🌤️ Weather App Styling Exercise (Mobile Only)
 
 ## 📌 Part 1: Figma Design & Styling
 
@@ -34,3 +33,166 @@ readme_content = """# 🌤️ Weather App Styling Exercise (Mobile Only)
 2. Add your API key in the following format:  
    ```env
    REACT_APP_WEATHER_API_KEY=your_api_key_here
+
+
+## Bonus Challenge
+
+### Check for stale cache weather data then request new data from API
+
+Currently the web application use countriesService.js to fetch data from the open-weather-map api, 
+
+- This only happens once to save api request calls
+
+- The fetched data is stored as a cache
+
+- As long as there is cached data, search bar will use cached data instead of making new requests.
+
+Write a helper function so that when the search bar is used it checks how much time has elapsed since the last update of the cache data. If the cached data is over than 30 minutes, fetch new data from the API then replace the old cached data with new data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<sub style="color: #212121">First to complete gets 300 tokens</sub>
+
+
+
+
+
+
+
