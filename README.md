@@ -1,4 +1,4 @@
-# 🌤️ Weather App Styling Exercise (Mobile Only)
+# 🌤️ Weather App Styling Project (Mobile Only)
 
 ## 📌 Part 1: Figma Design & Styling
 
