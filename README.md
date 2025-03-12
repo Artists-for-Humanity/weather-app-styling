@@ -35,7 +35,7 @@
    REACT_APP_WEATHER_API_KEY=your_api_key_here
 
 
-## Bonus Challenge
+## Bonus Challenge (20 Tokens)
 
 ### Check for stale cache weather data then request new data from API
 
