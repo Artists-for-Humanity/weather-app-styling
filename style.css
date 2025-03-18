@@ -1,9 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 430px;
-    height: 932px;
-    background-image: url('assets/a9ca0351bc7ff3c6b76f7b0fb39295c7.jpg');
 }
 
+.body1{
+    background-image: url('assets/a9ca0351bc7ff3c6b76f7b0fb39295c7.jpg');
+    width: 390px;
+    height: 844px;
+    text-align: center;
+    background-size: cover; /* This will make the image cover the entire container */
+    background-position: center; /* This positions the image in the center of the container */
+    background-repeat: no-repeat;
+}
+
+#statusBar{
+    margin: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Location Ovals and overshadows */
+
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.locationOval {
+    background-color: rgba(255, 241, 179, 0.5);
+    border-radius: 50px;
+    width: 224px;
+    height: 60px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    border: 3px solid #FDA93B;
+    overflow: hidden; /* Prevents content from overflowing the container */
+}
+
+.locationOval h1 {
+    font-size: 50px;
+    color: #CE7500;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0; /* Removes default margin */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-align: center; /* Centers the text inside h1 */
+    line-height: 1.2; /* Adjusts line height to prevent overflow */
+    max-width: 100%; /* Ensures h1 doesn't overflow the parent */
+    text-overflow: ellipsis; /* Optionally adds ellipsis if text overflows */
+    overflow: hidden; /* Hides overflowed text */
+}
