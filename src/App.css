@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
+  height: 100vh;
+  padding-top: 3rem;
 }
 
 .logo {
@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 }
+
+
+body{
+  background-color: grey;
+  width: 80vw;
+  padding-left: 10vw;
+  height: 100vh;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-style: black;
+}
+
+

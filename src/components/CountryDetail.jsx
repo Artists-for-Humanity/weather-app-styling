@@ -6,20 +6,9 @@ const CountryDetails = ({ country }) => {
 
     return (
         <div>
-            <h2>{name.common}</h2>
-            <p><strong>Capital:</strong> {capital?.[0]}</p>
-            <p><strong>Area:</strong> {area} km²</p>
-            <h3>Languages:</h3>
-            <ul>
-                {Object.values(languages).map((language) => <li key={language}>{language}</li>)}
-            </ul>
-            <img src={flags.svg} alt={`Flag of ${name.common}`}
-                style={{
-                    boxShadow: "10px 10px 15px rgba(0, 0, 0, 0.1)",
-                    width: "300px", // Optional: Adjust the size
-                    height: "auto", // Optional: Maintain aspect ratio
-                }} />
+            <h1 class= "country">{name.common}</h1>
             <CountryWeather capital={capital?.[0]}/>
+
         </div>
     );
 };
