@@ -1,6 +1,6 @@
 import axios from 'axios'
 // get weather api key from openweathermap.org then paste below
-const weatherApiKey = ''
+const weatherApiKey = 'cbf694d15b92363eb94602e0591aa5d3'
 const baseUrl = `https://studies.cs.helsinki.fi/restcountries/api/all`
 
 const getWeatherByCityName = async (cityName) => {
