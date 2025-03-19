@@ -28,11 +28,11 @@ const CountryWeather = ({ capital }) => {
 
       let gradient;
       if (temp < 40) {
-        gradient = 'linear-gradient(rgb(92, 92, 92), rgb(135, 206, 235))'; // Grey to Blue
+        gradient = 'linear-gradient(rgb(0,0,0), rgb(135, 206, 235))'; // Grey to Blue
       } else if (temp > 70) {
-        gradient = 'linear-gradient(rgb(92, 92, 92), rgb(255, 0, 0))'; // Grey to Red
+        gradient = 'linear-gradient(rgb(0,0,0), rgb(255, 0, 0))'; // Grey to Red
       } else {
-        gradient = 'linear-gradient(rgb(92, 92, 92), rgb(255, 255, 0))'; // Grey to Yellow
+        gradient = 'linear-gradient(rgb(0,0,0), rgb(38, 139, 7))'; // Grey to Yellow
       }
 
       // Modify the body's background
@@ -44,7 +44,7 @@ const CountryWeather = ({ capital }) => {
   if (!weather) return <p>No weather data available</p>;
 
   return (
-    <div style={{ width: "80vw", height: "100vh" }}>
+    <div style={{ width: "80vw", height: "100vh", color:"grey"}}>
       <h1 className="Temp">{weather.main.temp}°F</h1>
       <h3 className="Wind">Wind {weather.wind.speed} m/s</h3>
       <img

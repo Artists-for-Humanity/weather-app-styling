@@ -43,7 +43,7 @@
 
 
 body{
-  background-color: grey;
+  background-color: black;
   width: 80vw;
   padding-left: 10vw;
   height: 100vh;
@@ -52,13 +52,38 @@ body{
 
 
 input[type=text], select {
+  background-color: black;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid grey;
   box-sizing: border-box;
-  font-style: black;
+  color: white;
 }
 
 
+.title{
+  color: grey;
+}
+
+.optionCountry{
+  color: grey;
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 1rem;
+  cursor: pointer;
+  font-style: grey;
+  background-color: transparent;
+  font-size: 5vw;
+}
+
+.country{
+  color: grey;
+}

@@ -6,7 +6,7 @@ const CountryDetails = ({ country }) => {
 
     return (
         <div>
-            <h1 class= "country">{name.common}</h1>
+            <h1 className= "country">{name.common}</h1>
             <CountryWeather capital={capital?.[0]}/>
 
         </div>

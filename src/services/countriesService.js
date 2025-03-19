@@ -9,6 +9,6 @@ const getWeatherByCityName = async (cityName) => {
     return response.data
 }
 
-const getAllCountries = () => axions.get(`${baseUrl}`)
+const getAllCountries = () => axios.get(`${baseUrl}`)
 
 export default { getAllCountries, getWeatherByCityName }

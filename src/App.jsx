@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div>
-      <h1 class="title">Weather App</h1>
+      <h1 className="title">Weather App</h1>
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
       {filteredCountries.length > 10 && searchQuery !== '' &&
         <p>Too many matches, please narrow down your search.</p>
