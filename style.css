@@ -1,0 +1,7 @@
+body{
+    height: 720px;
+}
+.root{
+    background-color: red;
+    outline: 7px solid black;
+}
