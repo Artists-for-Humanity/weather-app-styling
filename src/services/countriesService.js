@@ -12,3 +12,4 @@ const getWeatherByCityName = async (cityName) => {
 const getAllCountries = () => axios.get(`${baseUrl}`)
 
 export default { getAllCountries, getWeatherByCityName }
+//hi
