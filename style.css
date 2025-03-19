@@ -17,13 +17,15 @@
 }
 
 #statusBar{
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .main{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
+    height: 100%;
 }
 /* Location Ovals and overshadows */
 
@@ -59,4 +61,138 @@
     max-width: 100%; /* Ensures h1 doesn't overflow the parent */
     text-overflow: ellipsis; /* Optionally adds ellipsis if text overflows */
     overflow: hidden; /* Hides overflowed text */
+}
+
+/* Temperature and Quote Display CSS */
+
+.temperatureAndQuoteDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperatureDisplayOuterCirlce{
+    width: 249px;
+    height: 249px;
+    background-color: rgba(226, 187, 80, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempDisplayInnerCircle{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: rgb(245,121,94);
+    background: linear-gradient(180deg, rgba(245,121,94,0.3) 22%, rgba(234,246,132,0.3) 56%, rgba(255,251,44,0.3) 88%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#currentStatus{
+    font-size: 45px;
+    color: #F29A15;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#currentDegree{
+    font-size: 75px;
+    color: white;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tempDisplayInnerCircle h1{
+    margin: 0; /* Removes default margin */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-align: center; /* Centers the text inside h1 */
+    line-height: 1.2; /* Adjusts line height to prevent overflow */
+    max-width: 100%; /* Ensures h1 doesn't overflow the parent */
+    text-overflow: ellipsis; /* Optionally adds ellipsis if text overflows */
+    overflow: hidden; /* Hides overflowed text */
+}
+
+#motivationalQuotes{
+    color: #D87A00;
+    font-size: 16px;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Forecast Container CSS */
+.forecastContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 369px;
+    background-color: rgba(255, 251, 234, 0.5);
+    border-radius: 15px;
+}
+
+/* Hourly forecast CSS */
+.hourlyForeCast{
+    display: flex;
+    flex-direction: column;
+    width: 351px;
+    height: 97px;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    width: 352px;
+    gap: 6px;
+}
+
+.time h1{
+    font-size: 10px;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;;
+}
+
+.hourlyForecastImgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hourlyForecastImgs img{
+    width: 36px;
+    height: 36px;
+}
+
+.hourlyForecastTemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.hourlyForecastTemp h1{
+    font-size: 10px;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;;
+
 }
