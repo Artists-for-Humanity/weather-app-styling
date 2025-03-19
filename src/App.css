@@ -1,28 +1,39 @@
 #root {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
+body {
+  background-color: #45a7e9; /* Change this to your desired color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo Styling */
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  will-change: transform, filter;
+  transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
+.logo:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+.logo.react:hover {
+  filter: brightness(1.3);
+}
+
+/* Logo Spin Animation */
 @keyframes logo-spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -33,10 +44,19 @@
   }
 }
 
+/* Card Styling */
 .card {
-  padding: 2em;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Documentation Text */
 .read-the-docs {
   color: #888;
+  text-align: center;
+  font-size: 0.9rem;
 }
