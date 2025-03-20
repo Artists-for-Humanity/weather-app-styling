@@ -8,17 +8,18 @@
     <title>Vite + React</title>
   </head>
   <body class="body1">
-    <div id="root">
-      <img src="assets/status bar.png" alt="status bar" id="statusBar">
-    </div>
 
     <!-- Body of Designs -->
     <div class="main">
 
+      <!-- Design for root -->
+      <div id="root">
+      </div>
+
       <!-- The oval with the current location -->
       <div class="location">
         <div class="locationOval">
-          <h1>Boston</h1>
+          <h1>China</h1>
         </div>
       </div>
 
@@ -52,11 +53,11 @@
 
           <div class="hourlyForecastImgs">
             <img id="hourlyForecastImg1" src="assets/sun.png" alt="Image representing the first hourly forecast">
-            <img id="hourlyForecastImg2" src="assets/sun.png" alt="Image representing the first hourly forecast">
-            <img id="hourlyForecastImg3" src="assets/sun.png" alt="Image representing the first hourly forecast">
-            <img id="hourlyForecastImg4" src="assets/sun.png" alt="Image representing the first hourly forecast">
-            <img id="hourlyForecastImg5" src="assets/sun.png" alt="Image representing the first hourly forecast">
-            <img id="hourlyForecastImg6" src="assets/sun.png" alt="Image representing the first hourly forecast">
+            <img id="hourlyForecastImg2" src="assets/sun.png" alt="Image representing the second hourly forecast">
+            <img id="hourlyForecastImg3" src="assets/sun.png" alt="Image representing the third hourly forecast">
+            <img id="hourlyForecastImg4" src="assets/cloudy.png" alt="Image representing the fourth hourly forecast">
+            <img id="hourlyForecastImg5" src="assets/cloudy.png" alt="Image representing the fifth hourly forecast">
+            <img id="hourlyForecastImg6" src="assets/sunset.png" alt="Image representing the sixth hourly forecast">
           </div>
 
           <div class="hourlyForecastTemp">
@@ -71,13 +72,39 @@
         
         <!-- Stuff for weekly forecast -->
         <div class="weeklyForecast">
+          <div class="weekDay">
+            <h1 id="weekDay1">MON</h1>
+            <h1 id="weekDay2">TUE</h1>
+            <h1 id="weekDay3">WED</h1>
+            <h1 id="weekDay4">THURS</h1>
+            <h1 id="weekDay5">FRI</h1>
+            <h1 id="weekDay6">SAT</h1>
+          </div>
 
+          <div class="weeklyForecastImgs">
+            <img src="assets/storm.png" alt="Image representing the first day forecast" id="day1">
+            <img src="assets/sun.png" alt="Image representing the second day forecast" id="day2">
+            <img src="assets/sun.png" alt="Image representing the third day forecast" id="day3">
+            <img src="assets/storm.png" alt="Image representing the fourth day forecast" id="day4">
+            <img src="assets/cloudy.png" alt="Image representing the fifth day forecast" id="day5">
+            <img src="assets/cloudy.png" alt="Image representing the sixth day forecast" id="day6">
+          </div>
+
+          <div class="weeklyForecastTemp">
+            <h1 id="weeklyTemp1">74°</h1>
+            <h1 id="weeklyTemp2">74°</h1>
+            <h1 id="weeklyTemp3">80°</h1>
+            <h1 id="weeklyTemp4">72°</h1>
+            <h1 id="weeklyTemp5">70°</h1>
+            <h1 id="weeklyTemp6">72°</h1>
+          </div>
         </div>
 
+       <!-- Stuff for Precipitation forecast -->
         <div class="precipitationForecast">
 
         </div>
-       </div>
+       </div> 
     </div>
    
     
