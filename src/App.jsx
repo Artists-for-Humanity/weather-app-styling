@@ -3,7 +3,7 @@ import useCountries from './hooks/useCountries'
 import SearchBar from './components/SearchBar'
 import CountryDetails from './components/CountryDetail'
 import CountryList from './components/CountryList'
-
+import "./App.css"
 
 function App() {
   const countries = useCountries();
