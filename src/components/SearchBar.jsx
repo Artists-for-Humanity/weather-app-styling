@@ -2,9 +2,9 @@ import React from "react";
 
 const SearchBar = ({value, onChange}) => {
     return (
-        <div>
-            <label htmlFor="search">Find Country: </label>
+        <div className="searchBar">
             <input 
+                placeholder="Find a Country"
                 type="text"
                 id="search"
                 value={value}

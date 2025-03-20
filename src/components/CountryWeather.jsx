@@ -23,15 +23,15 @@ const CountryWeather = ({capital}) => {
         fetchWeather()
     }, [capital])
 
-    if (loading) return <p>Loading ...</p>
-    if (!weather) return <p>No Weather data available</p>
+    if (loading) return <p>Loading...</p>
+    if (!weather) return <p>No Weather Data Available</p>
 
     return(
     <>
-        <h2>Weather in {capital}</h2>
-        <p>Temperature {weather.main.temp}°F</p>
         <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}/>
-        <p>wind {weather.wind.speed} m/s</p>
+        <p className="description">{weather.weather[0].description}</p>
+        <p>Temperature {weather.main.temp}°F</p>
+        <p>Wind {weather.wind.speed} m/s</p>
     </>)
 }
 

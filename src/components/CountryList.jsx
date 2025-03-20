@@ -2,14 +2,12 @@ import React from "react";
 
 const CountryList = ({ countries, setSearchQuery }) => {
     return (
-        <ul>
+        <div className="countriesList">
             {countries.map(
                 country =>
-                    <li key={country.cca3}>{country.name.common}
-                        <button onClick={() => setSearchQuery(country.name.common)}>Show</button>
-                    </li>)
+                    <div key={country.cca3} onClick={() => setSearchQuery(country.name.common)}>{country.name.common}</div>)
             }
-        </ul>
+        </div>
     )
 }
 
