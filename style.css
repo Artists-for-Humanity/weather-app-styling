@@ -1,3 +1,8 @@
-.root{
-    display: grid;
+@media screen and (max-width: 370px){
+    .root{
+        display: grid;
+    }
+    body{
+        
+    }
 }
