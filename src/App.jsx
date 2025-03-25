@@ -3,7 +3,7 @@ import useCountries from './hooks/useCountries'
 import SearchBar from './components/SearchBar'
 import CountryDetails from './components/CountryDetail'
 import CountryList from './components/CountryList'
-
+import "./App.css"
 
 function App() {
   const countries = useCountries();
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <h1>Find Countires</h1>
+      <h1>Find Countries</h1>
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
       {filteredCountries.length > 10 && searchQuery !== '' &&
         <p>Too many matches, please narrow down your search.</p>
