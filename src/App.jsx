@@ -5,7 +5,7 @@ import CountryDetails from './components/CountryDetail'
 import CountryList from './components/CountryList'
 
 
-function App() {
+function  App() {
   const countries = useCountries();
   const [searchQuery, setSearchQuery] = useState("")
   const filteredCountries = countries.filter(country =>
@@ -13,7 +13,7 @@ function App() {
   );
 
   return (
-    <div>
+    <div className="background">
       <h1>Find Countires</h1>
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
       {filteredCountries.length > 10 && searchQuery !== '' &&

@@ -1,8 +1,14 @@
 import React from "react";
+import './SearchBar.css'
 
 const SearchBar = ({value, onChange}) => {
+
+    // const style = {
+    //     background: "red"
+    // }
+
     return (
-        <div>
+        <div className="">
             <label htmlFor="search">Find Country: </label>
             <input 
                 type="text"
