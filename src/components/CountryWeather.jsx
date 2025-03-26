@@ -22,14 +22,6 @@ const CountryWeather = ({ capital, flagSvg }) => {
         fetchWeather()
     }, [capital])
 
-    if (loading) return <p>Loading ...</p>
-    if (!weather) return <p>No Weather data available</p>
-
-    const flagStyle = {
-        width: '80%',
-        height: 'auto'
-    }
-
     const currWeather = weather.weather[0].main
     console.log(currWeather)
     let backgroundChange = {}
@@ -53,6 +45,14 @@ const CountryWeather = ({ capital, flagSvg }) => {
         }
     }
     document.body.style.backgroundImage = backgroundChange;
+
+    if (loading) return <p>Loading ...</p>
+    if (!weather) return <p>No Weather data available</p>
+
+    const flagStyle = {
+        width: '80%',
+        height: 'auto'
+    }
     return (
         <>
             <div class='weather_inf'>
