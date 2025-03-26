@@ -3,7 +3,7 @@ import countryService from "../services/countriesService";
 
 const useCountries = () => {
   const [countries, setCountries] = useState([])
-
+  console.log(countries)
   useEffect(() => {
     const cachedCountries = localStorage.getItem('countries');
     if (cachedCountries) {

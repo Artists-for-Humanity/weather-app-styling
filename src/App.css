@@ -5,11 +5,19 @@
   text-align: center;
 }
 
+* {
+  overflow-y: hidden;
+}
+
 .logo {
-  height: 6em;
+  height: 1em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 10px 37px black;
+  border-radius: 5%;
+  border-color: 2px solid black;
 }
 
 .logo:hover {
@@ -47,7 +55,6 @@
 .background {
   position: absolute;
   z-index: -1;
-  background-image: url(image/Sunny_background.png);
   height: 100%;
   width: 100vw;
   background-size: 100% 100%;
@@ -56,10 +63,79 @@
 }
 
 div {
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .inf_format {
   display: grid;
+  width: 100%;
+  height: auto;
 
+}
+
+.location {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 100px 100px black, 100px 50px 80px black, 010px 30px 30px black;
+}
+
+.search_value {
+  border-radius: 10px;
+  width: 150px;
+  background-color: #ffffff;
+  color: rgb(8, 7, 7);
+  border-color: rgb(0, 0, 0);
+
+}
+
+.search_container {
+  display: flex;
+  position: relative;
+
+}
+
+.Country_infor {
+  width: 50%;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(25, 25, 25);
+  text-shadow: 010px 6px 30px rgb(111, 111, 111);
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 15%;
+}
+
+.box_infor {
+  position: relative;
+
+}
+
+.box {
+  position: absolute;
+  z-index: -1;
+  right: -10px;
+  bottom: -32vh;
+  height: 50vh;
+  width: 100vw;
+  border: 1px solid;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, blue 60%, white 50%);
+  background-size: 100% 100%;
+  opacity: 85%;
+}
+
+.flag_location {
+  display: flex;
+  justify-content: center;
+
+}
+
+.weather_infor {
+  display: grid;
+}
+
+.flag {
+  position: relative;
+  bottom: 15.25vh;
+  height: auto;
+  width: 25px;
 }
