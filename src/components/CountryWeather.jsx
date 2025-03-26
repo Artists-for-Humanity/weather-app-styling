@@ -25,7 +25,7 @@ const CountryWeather = ({ capital, flagSvg }) => {
         if (weather) {
             const currWeather = weather.weather[0].main
             console.log(currWeather)
-            let backgroundChange;
+            let backgroundChange = 'linear gradient(to bottom, white 80%, blue 50%)';
             if (currWeather === 'Clear') {
                 backgroundChange = {
                     background: "blue"
@@ -40,12 +40,9 @@ const CountryWeather = ({ capital, flagSvg }) => {
                 }        // style = {background:blue}
             } else if (currWeather === 'Clouds') {
                 console.log('ruan?')
-                backgroundChange = {
-                    background: "green"
-                    // backgroundImage: "url(image/Cloud_background.png)"
-                }
+                backgroundChange = "green"
             }
-            document.body.style.backgroundImage = backgroundChange;
+            document.body.style.background = backgroundChange;
         }
     }, [weather]);
 
