@@ -30,14 +30,9 @@ const CountryWeather = ({ capital, flagSvg }) => {
         height: 'auto'
     }
 
-    const setBackGroundColor = (color) => { return { background: color } }
-    let backgroundChange = {
-        // backgroundImage: "url(image/Sunny_background.png)"
-        background: "red"
-    }
-
     const currWeather = weather.weather[0].main
     console.log(currWeather)
+    let backgroundChange = {}
     if (currWeather === 'Clear') {
         backgroundChange = {
             background: "blue"
@@ -57,7 +52,7 @@ const CountryWeather = ({ capital, flagSvg }) => {
             // backgroundImage: "url(image/Cloud_background.png)"
         }
     }
-    document.body.style.background = backgroundChange;
+    document.body.style.backgroundImage = backgroundChange;
     return (
         <>
             <div class='weather_inf'>

@@ -52,20 +52,6 @@
   color: #888;
 }
 
-.background {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100vw;
-  background-size: 100% 100%;
-  left: 0%;
-  bottom: 0%;
-}
-
-div {
-  /* overflow: hidden; */
-}
-
 .inf_format {
   display: grid;
   width: 100%;

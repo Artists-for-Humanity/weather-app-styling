@@ -5,7 +5,7 @@ import '../../src/App.css'
 
 
 const CountryDetails = ({ country }) => {
-    const { capital, flags, independent } = country;
+    const { name, capital, area, languages, flags, independent } = country;
     console.log("is independent?", independent)
 
     return (

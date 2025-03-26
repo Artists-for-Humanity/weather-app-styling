@@ -5,10 +5,8 @@ import CountryDetails from './components/CountryDetail'
 import CountryList from './components/CountryList'
 
 
+
 import '../src/App.css'
-
-const weathernow = weather.weather[0].main
-
 function App() {
   const countries = useCountries();
   const [searchQuery, setSearchQuery] = useState("")
