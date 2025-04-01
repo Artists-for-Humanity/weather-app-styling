@@ -1,8 +1,9 @@
 import React from "react";
+import "../App.css"
 
 const SearchBar = ({value, onChange}) => {
     return (
-        <div>
+        <div class ="search">   
             <label htmlFor="search">Find Country: </label>
             <input 
                 type="text"

@@ -12,7 +12,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+
 }
+
+#search {
+  color: #000000;
+}
+
+
+.font-size{
+  line-height: 1px;
+  font-size: 50px;
+}
+
 
 .container {
   align-items: center;
@@ -58,6 +70,9 @@ h1 {
 
 .read-the-docs {
   color: #8f0808;
+}
+ul{
+  display: inline-block;
 }
 
 

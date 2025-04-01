@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import countryService from "../services/countriesService";
-
+import "../App.css"
 const CountryWeather = ({capital}) => {
 
     const [weather, setWeather] = useState(null)
@@ -29,7 +29,8 @@ const CountryWeather = ({capital}) => {
     return(
     <>
         <h2>Weather in {capital}</h2>
-        <p>Temperature {weather.main.temp}°F</p>
+        
+        <p className="font-size"> {weather.main.temp}°F</p>
         <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}/>
         <p>wind {weather.wind.speed} m/s</p>
     </>)
