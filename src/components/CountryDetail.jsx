@@ -5,7 +5,7 @@ const CountryDetails = ({ country }) => {
     const { name, capital, area, languages, flags} = country;
 
     return (
-        <div>
+        <>
             <h2>{name.common}</h2>
             <p><strong>Capital:</strong> {capital?.[0]}</p>
             <p><strong>Area:</strong> {area} km²</p>
@@ -20,7 +20,7 @@ const CountryDetails = ({ country }) => {
                     height: "auto", // Optional: Maintain aspect ratio
                 }} />
             <CountryWeather capital={capital?.[0]}/>
-        </div>
+        </>
     );
 };
 

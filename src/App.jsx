@@ -3,6 +3,7 @@ import useCountries from './hooks/useCountries'
 import SearchBar from './components/SearchBar'
 import CountryDetails from './components/CountryDetail'
 import CountryList from './components/CountryList'
+import "./App.css"
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   );
 
   return (
-    <div>
+    <div className='zaitun'>
       <h1>Find Countires</h1>
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
       {filteredCountries.length > 10 && searchQuery !== '' &&

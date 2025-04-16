@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+body { 
+  /* background: blue; */
+}
+
+.zaitun {
+  /* background: linear-gradient(90deg, rgba(35,190,87,1) 0%, rgba(231,40,223,1) 35%, rgba(0,212,255,1) 100%); */
+  /* background-image: url('./assets/night_clear_bg.png'); */
+}
+
